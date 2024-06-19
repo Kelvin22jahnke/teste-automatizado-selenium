@@ -5,9 +5,9 @@ Este projeto demonstra como configurar e executar testes automatizados usando Se
 - TesteAutomatizado: Configuração básica para testes com Selenium.
 - BuscaCepTeste: Testes específicos para buscar informações de CEP em um site de exemplo.
 # Estrutura do Projeto:
-Diretório Principal
-TesteAutomatizado.cs
-BuscaCepTeste.cs
+- Diretório Principal
+- TesteAutomatizado.cs
+- BuscaCepTeste.cs
 # Pré-requisitos:
 - Visual Studio (ou outro IDE compatível)
 - .NET Framework
