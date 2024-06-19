@@ -7,6 +7,7 @@ namespace TesteAutomatizadoSelenium
     public class TesteAutomatizado
     {
         public IWebDriver driver;
+        public bool driverQuit = true;
 
         [SetUp]
         public void InicioTeste()
@@ -18,7 +19,8 @@ namespace TesteAutomatizadoSelenium
 
         [TearDown]
         public void FimDoTeste() 
-        {   
+        {
+            if (driverQuit) driver.Quit();
         }
     }
 }
