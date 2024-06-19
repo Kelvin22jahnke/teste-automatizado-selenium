@@ -13,7 +13,7 @@ namespace TesteAutomatizadoSelenium
             driver.FindElement(By.Id("botaoBuscar")).Click();
 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(6);
-            driverQuit = false;
+            //driverQuit = false;
             Assert.That(driver.FindElement(By.XPath("/html/body/div[1]/main/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]")).Text, Does.Contain("São Lourenço do Sul"));
             Assert.That(driver.FindElement(By.XPath("/html/body/div[1]/main/div/div/div/div/div/div[2]/table/tbody/tr[3]/td[2]")).Text, Does.Contain("Rio Grande do Sul"));
 
