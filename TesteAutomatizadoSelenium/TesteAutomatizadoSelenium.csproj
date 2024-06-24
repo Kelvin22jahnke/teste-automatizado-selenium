@@ -17,4 +17,9 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="126.0.6478.6100" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Test\" />
+    <Folder Include="Page\" />
+  </ItemGroup>
+
 </Project>

@@ -2,12 +2,11 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace TesteAutomatizadoSelenium
+namespace TesteAutomatizadoSelenium.Core
 {
-    public class TesteAutomatizado
+    public class TesteAutomatizado:DSL
     {
-        public IWebDriver driver;
-        public bool driverQuit = true;
+      
 
         [SetUp]
         public void InicioTeste()
@@ -18,7 +17,7 @@ namespace TesteAutomatizadoSelenium
         }
 
         [TearDown]
-        public void FimDoTeste() 
+        public void FimDoTeste()
         {
             if (driverQuit) driver.Quit();
         }
